@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"
+        >Rainfall Notifier</string>
+    <string
+        name="title_activity_settings"
+        >Notification Settings</string>
+
+    <!--Menu Actions-->
+    <string
+        name="action_settings"
+        >Settings</string>
+
+
+<!-- Settings Screen -->
+    <!--Default Preference Values-->
+    <string name="default_notification_time"
+        >06</string>
+
+    <!--Default Preference Summaries-->
+    <string name="default_notification_toggle_summary"
+        >Toggle the daily rain forecast notification</string>
+    <string name="default_notification_time_summary"
+        >Select when to receive the notification</string>
+    <string name="default_current_location_toggle_summary"
+        >Use your current location for the rain forecast notification</string>
+    <string name="default_location_select_summary"
+        >Select the location to use for the rainfall notification</string>
+
+
+    <!--Preference Object Keys-->
+    <string name="notification_toggle_key"
+        >notificationToggle</string>
+    <string name="notification_time_select_key"
+        >notificationTime</string>
+    <string name="current_location_toggle_key"
+        >currentLocToggle</string>
+    <string name="location_select_key"
+        >locationSelect</string>
+
+    <!--Saved Preference Keys-->
+    <string name="saved_location_name"
+        >savedLocationName</string>
+    <string name="saved_location_address"
+        >savedLocationAddress</string>
+    <string name="saved_location_latitude"
+        >savedLocationLat</string>
+    <string name="saved_location_longitude"
+        >savedLocationLong</string>
+</resources>

@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/title_activity_settings">
+    <CheckBoxPreference android:title="Use Current Location"
+        android:defaultValue="true"
+        android:summary="@string/default_current_location_toggle_summary"
+        android:key="@string/current_location_toggle_key"
+        android:disableDependentsState="true" />
+    <Preference
+        android:title="Location Select"
+        android:summary="@string/default_location_select_summary"
+        android:key="@string/location_select_key"
+        android:dependency="@string/current_location_toggle_key" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:title="Rain Notification"
+        android:key="@string/notification_toggle_key"
+        android:summary="@string/default_notification_toggle_summary" />
+    <ListPreference
+        android:title="Time to receive notification"
+        android:entries="@array/hoursArray"
+        android:entryValues="@array/hourValues"
+        android:dependency="@string/notification_toggle_key"
+        android:key="@string/notification_time_select_key"
+        android:summary="@string/default_notification_time_summary"
+        android:defaultValue="@string/default_notification_time" />
+</PreferenceScreen>
